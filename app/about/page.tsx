@@ -5,6 +5,7 @@ import { AboutHero } from "@/app/components/sections/about-hero-section";
 import { TeamSection } from "@/app/components/sections/team-section";
 import { ValuesSection } from "@/app/components/sections/values-section";
 import { JourneySection } from "@/app/components/sections/journey-section";
+import { FaqSection } from "@/app/components/sections/faq-section";
 import { FeatureCta } from "@/app/components/sections/feature-cta-section";
 import { Cta } from "@/app/components/sections/cta-section";
 
@@ -21,6 +22,7 @@ export default function AboutPage() {
       <ValuesSection />
       <JourneySection />
       <TeamSection />
+      <FaqSection />
       <FeatureCta />
       <Cta />
     </>
