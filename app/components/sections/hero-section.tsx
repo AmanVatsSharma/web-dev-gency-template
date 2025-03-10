@@ -113,14 +113,17 @@ export function HeroSection() {
           >
             <FloatingElement speed="slow" className="relative z-10 w-full max-w-lg mx-auto">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl glow-border">
-                <Image
-                  src="/hero-dashboard.png"
-                  alt="Dashboard Preview"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto"
-                  priority
-                />
+                <div className="aspect-[4/3] bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-600">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,white_0.5px,transparent_1px)] bg-[size:16px_16px] opacity-20"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white text-center">
+                      <div className="p-6 rounded-lg backdrop-blur-sm bg-white/5 w-64">
+                        <h3 className="text-xl font-bold mb-2">Dashboard</h3>
+                        <p className="text-sm text-white/80">Modern interface for a SaaS platform</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-6">
                     <p className="text-white font-medium">Modern dashboard design for a SaaS company</p>

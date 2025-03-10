@@ -153,13 +153,12 @@ export function PortfolioSection() {
               >
                 <div className="bg-background rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                   <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.title}
-                      width={600}
-                      height={450}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      priority={index < 3}
+                    <div 
+                      className={`w-full h-full ${
+                        index % 2 === 0 
+                          ? 'bg-gradient-to-br from-purple-600/90 via-blue-600/90 to-indigo-600/90' 
+                          : 'bg-gradient-to-tr from-blue-600/90 via-indigo-600/90 to-purple-600/90'
+                      }`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                       <div className="p-6">
